@@ -11,7 +11,7 @@ namespace Tyuiu.LavrentevVA.Sprint4.Task1.V9.Lib
             {
                 if (array[i] % 2 == 0)
                 {
-                    sumArray += array[i];
+                    sumArray *= array[i];
                 }
             }
             return sumArray;
