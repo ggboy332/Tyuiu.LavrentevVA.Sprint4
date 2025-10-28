@@ -1,11 +1,11 @@
-﻿using Tyuiu.LavrentevVA.Sprint4.Task3.V30.Lib;
+﻿using Tyuiu.LavrentevVA.Sprint4.Task4.V29.Lib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.ConstrainedExecution;
 using System.Text;
 
-namespace Tyuiu.LavrentevVA.Sprint4.Task2.V11
+namespace Tyuiu.LavrentevVA.Sprint4.Task4.V29
 {
     internal class Program
     {
@@ -21,7 +21,7 @@ namespace Tyuiu.LavrentevVA.Sprint4.Task2.V11
             {
                 for (int j = 0; j < len; j++)
                 {
-                    Console.WriteLine($"Введите элемент массива [{i + 1},{j + 1}] (от 1 до 6):");
+                    Console.WriteLine($"Введите элемент массива [{i + 1},{j + 1}] (от 4 до 8):");
                     numsArray[i, j] = Convert.ToInt32(Console.ReadLine());
                 }
             }
@@ -35,12 +35,11 @@ namespace Tyuiu.LavrentevVA.Sprint4.Task2.V11
                 Console.WriteLine();
             }
             int result = ds.Calculate(numsArray);
-            Console.WriteLine("Максимальный элемент в третьей строке массива:");
+            Console.WriteLine("Сумма четных элементов массива:");
             Console.WriteLine(result);
-
- 
             Console.ReadKey();
 
         }
     }
 }
+
